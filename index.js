@@ -1,4 +1,3 @@
-import inquirer from "inquirer";
 import colors from "jbassard97nodecolors";
 import { generateTemplate, fields } from "./assets/template.js";
 

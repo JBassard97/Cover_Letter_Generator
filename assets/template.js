@@ -1,5 +1,6 @@
+import { currentFormattedDate } from "../utils/formattedDate.js";
+
 let fields = {
-  applicationDate: null,
   position: null,
   companyName: null,
   companyAddress1: null,
@@ -18,7 +19,7 @@ const generateTemplate = () => {
   } ${fields.companyAddress2 || ""}`.trim();
 
   return `
- ${fields.applicationDate /*[dd month year]*/} 
+ ${currentFormattedDate()} 
 
  Jonathan Acciarito
  100 Rock Haven Road, Apt Q101
