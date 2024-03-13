@@ -1,6 +1,8 @@
 import inquirer from "inquirer";
 import colors from "jbassard97nodecolors";
-import template from "./assets/template.js";
+import { generateTemplate, fields } from "./assets/template.js";
 
+const colorLog = (text) => console.log(colors.CSSkeywordText(text, "hotpink"))
+const template = generateTemplate();
 
-console.log(template);
+colorLog(template);

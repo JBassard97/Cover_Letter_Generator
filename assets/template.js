@@ -1,12 +1,24 @@
 let fields = {
+  applicationDate: null,
   position: null,
   companyName: null,
   companyAddress1: null,
   companyAddress2: null,
+  platform: null,
+  skill1: null,
+  skill2: null,
+  skill3: null,
+  missionGoal: null,
+  whyJoinParagraph: null,
 };
 
-const template = `
-[Application Date-dd month year]
+const generateTemplate = () => {
+  const companyAddress = `${
+    fields.companyAddress1 ? `${fields.companyAddress1}\n` : ""
+  } ${fields.companyAddress2 || ""}`.trim();
+
+  return `
+ ${fields.applicationDate /*[dd month year]*/} 
 
  Jonathan Acciarito
  100 Rock Haven Road, Apt Q101
@@ -15,8 +27,7 @@ const template = `
  Hiring Manager
  ${fields.position}
  ${fields.companyName}
- ${fields.companyAddress1}
- ${fields.companyAddress2}
+ ${companyAddress ? `${companyAddress}` : ""}
 
  Dear Hiring Manager,
  
@@ -26,9 +37,12 @@ const template = `
  building responsive and accessible front-ends with React; designing complex yet sensible and
  scalable back-ends with Express and Node.js; utilizing databases, such as MySQL and
  MongoDB; and mediating between the three technologies with both RESTful and GraphQL
- API’s. After seeing your [POSITION] advertisement on [PLATFORM], I am excited to apply my
- skills with [skill1], [skill2], and [skill3] to improve the [SOMETHING FROM MISSION
- STATEMENT] of your company.
+ API’s. After seeing your ${fields.position} advertisement on ${
+    fields.platform
+  }, I am excited to apply my
+ skills with ${fields.skill1}, ${fields.skill2}, and ${
+    fields.skill3
+  } to improve the ${fields.missionGoal} of your company.
 
  Through prior work experience as an Assistant General Manager at Marco’s Pizza, LLC, I have
  developed key skills in effective communication, service, and leadership. In this role, I have
@@ -40,8 +54,10 @@ const template = `
  innovative solutions. My transferable skills include project management, attention to detail, and
  the ability to work well under pressure.
 
- [In this paragraph talk about the company and its mission. Why you want to join, and how you
- would fit into its mission. 3-4 sentences.]
+ ${
+   fields.whyJoinParagraph /*[In this paragraph talk about the company and its mission. Why you want to join, and how you
+ would fit into its mission. 3-4 sentences.]*/
+ }
 
  Thank you for your consideration. If you have any additional questions, please feel free to
  contact me by telephone at (804) 971-1162 or via email at jonathanacciarito@gmail.com. I look
@@ -51,5 +67,6 @@ const template = `
 
  Jonathan A. Acciarito
 `;
+};
 
-export default template;
+export { fields, generateTemplate };
