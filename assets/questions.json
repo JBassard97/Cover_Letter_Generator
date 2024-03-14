@@ -1,57 +1,52 @@
 [
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "position",
+    "message": "What position are you applying for?"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "companyName",
+    "message": "What is the name of the company?"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "companyAddress1",
+    "message": "What is the address of the company?"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "companyAddress2",
+    "message": "Optional 2nd line of the address of the company?"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "hiringPlatform",
+    "message": "Where did you see this job post?"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "skill1",
+    "message": "What is the 1st skill you have that is relevant to the job"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "skill2",
+    "message": "What is the 2st skill you have that is relevant to the job"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "skill3",
+    "message": "What is the 3st skill you have that is relevant to the job"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "missionGoal",
+    "message": "In the company's mission statement, what goal will your skills help serve?"
   },
   {
     "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
-  },
-  {
-    "type": "input",
-    "name": "abcdefg",
-    "message": "messageabcdefg"
+    "name": "whyJoinParagraph",
+    "message": "Write a paragraph (3-4 sentences) about the company, its mission, and why you would fit into it."
   }
 ]

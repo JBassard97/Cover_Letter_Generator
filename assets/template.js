@@ -5,7 +5,7 @@ let fields = {
   companyName: null,
   companyAddress1: null,
   companyAddress2: null,
-  platform: null,
+  hiringPlatform: null,
   skill1: null,
   skill2: null,
   skill3: null,
@@ -39,7 +39,7 @@ const generateTemplate = () => {
  scalable back-ends with Express and Node.js; utilizing databases, such as MySQL and
  MongoDB; and mediating between the three technologies with both RESTful and GraphQL
  API’s. After seeing your ${fields.position} advertisement on ${
-    fields.platform
+    fields.hiringPlatform
   }, I am excited to apply my
  skills with ${fields.skill1}, ${fields.skill2}, and ${
     fields.skill3
