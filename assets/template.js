@@ -15,7 +15,7 @@ let fields = {
 
 let generateTemplate = () => {
   let companyAddress = `${
-    fields.companyAddress1 ? `${fields.companyAddress1}\n` : ""
+    fields.companyAddress1.length > 2 ? `${fields.companyAddress1}\n` : ""
   }${fields.companyAddress2 || ""}`.trim();
 
   return `
@@ -25,12 +25,10 @@ ${process.env.NAME}
 ${process.env.ADDRESS}
 ${process.env.CITY}
 
-
 Hiring Manager
 ${fields.position}
 ${fields.companyName}
 ${companyAddress ? `${companyAddress}` : ""}
-
 
 Dear Hiring Manager,
  

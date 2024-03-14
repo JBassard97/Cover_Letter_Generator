@@ -26,11 +26,8 @@ async function main() {
     const doc = new PDFDocument();
     const stream = fs.createWriteStream("J_Acciarito_Cover_Letter.pdf");
     doc.pipe(stream);
-    const paragraphs = text.split("\n\n");
-    paragraphs.forEach((paragraph) => {
-      doc.text(paragraph);
-      doc.moveDown(0.5);
-    });
+    doc.font("Times-Roman").fontSize(12);
+    doc.text(text);
     doc.end();
     stream.on("finish", () => {
       console.log("pdf created successfully.");
