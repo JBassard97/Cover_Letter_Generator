@@ -3,16 +3,18 @@ dotenvConfig();
 import colors from "jbassard97nodecolors";
 import { generateTemplate, fields } from "./assets/template.js";
 import { askQuestions } from "./utils/askQuestions.js";
+// import { updateFields } from "./utils/updateFields.js";
 
 const colorLog = (text) => console.log(colors.CSSkeywordText(text, "aqua"));
-const template = generateTemplate();
 
-colorLog(template);
+// colorLog(template);
 
 async function main() {
   try {
     const answers = await askQuestions();
-      colorLog(answers);
+    Object.assign(fields, answers);
+    const template = generateTemplate();
+    colorLog(template);
   } catch (error) {
     console.error("Error:\n", error);
   }

@@ -13,8 +13,8 @@ let fields = {
   whyJoinParagraph: null,
 };
 
-const generateTemplate = () => {
-  const companyAddress = `${
+let generateTemplate = () => {
+  let companyAddress = `${
     fields.companyAddress1 ? `${fields.companyAddress1}\n` : ""
   } ${fields.companyAddress2 || ""}`.trim();
 
