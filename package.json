@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "inquirer": "^9.2.16",
     "jbassard97nodecolors": "^3.1.0"
   }

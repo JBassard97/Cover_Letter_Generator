@@ -21,9 +21,9 @@ const generateTemplate = () => {
   return `
  ${currentFormattedDate()} 
 
- Jonathan Acciarito
- 100 Rock Haven Road, Apt Q101
- Carrboro, NC 27510
+ ${process.env.NAME}
+ ${process.env.ADDRESS}
+ ${process.env.CITY}
 
  Hiring Manager
  ${fields.position}
@@ -32,7 +32,9 @@ const generateTemplate = () => {
 
  Dear Hiring Manager,
  
- My name is Jonathan Acciarito and I am a recent graduate of the Full-Stack Coding Bootcamp at
+ My name is ${
+   process.env.NAME
+ } and I am a recent graduate of the Full-Stack Coding Bootcamp at
  the University of North Carolina at Chapel Hill. I have a certificate in MERN stack application
  development with a robust foundation in JavaScript and TypeScript. I also have experience in
  building responsive and accessible front-ends with React; designing complex yet sensible and
@@ -61,12 +63,14 @@ const generateTemplate = () => {
  }
 
  Thank you for your consideration. If you have any additional questions, please feel free to
- contact me by telephone at (804) 971-1162 or via email at jonathanacciarito@gmail.com. I look
+ contact me by telephone at ${process.env.PHONE} or via email at ${
+    process.env.EMAIL
+  }. I look
  forward to hearing from you soon.
 
  Best Regards,
 
- Jonathan A. Acciarito
+ ${process.env.REGARDS}
 `;
 };
 
