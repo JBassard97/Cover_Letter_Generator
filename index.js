@@ -7,10 +7,11 @@ import fs from "fs";
 import PDFDocument from "pdfkit";
 
 const colorLog = (text) =>
-  console.log(colors.CSSkeywordText(text, "mediumslateblue"));
+  console.log(colors.CSSkeywordText(text, "pink"));
 
 async function main() {
   try {
+    console.clear();
     console.log("Starting main function."); // Debug logging
 
     const answers = await askQuestions();

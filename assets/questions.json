@@ -2,51 +2,51 @@
   {
     "type": "input",
     "name": "position",
-    "message": "What position are you applying for?"
+    "message": "What position are you applying for?\n"
   },
   {
     "type": "input",
     "name": "companyName",
-    "message": "What is the name of the company?"
+    "message": "What is the name of the company?\n"
   },
   {
     "type": "input",
     "name": "companyAddress1",
-    "message": "What is the address of the company?"
+    "message": "What is the address of the company?\n"
   },
   {
     "type": "input",
     "name": "companyAddress2",
-    "message": "Optional 2nd line of the address of the company?"
+    "message": "Optional 2nd line of the address of the company?\n"
   },
   {
     "type": "input",
     "name": "hiringPlatform",
-    "message": "Where did you see this job post?"
+    "message": "Where did you see this job post?\n"
   },
   {
     "type": "input",
     "name": "skill1",
-    "message": "What is the 1st skill you have that is relevant to the job"
+    "message": "What is the 1st skill you have that is relevant to the job\n"
   },
   {
     "type": "input",
     "name": "skill2",
-    "message": "What is the 2st skill you have that is relevant to the job"
+    "message": "What is the 2nd skill you have that is relevant to the job\n"
   },
   {
     "type": "input",
     "name": "skill3",
-    "message": "What is the 3st skill you have that is relevant to the job"
+    "message": "What is the 3rd skill you have that is relevant to the job\n"
   },
   {
     "type": "input",
     "name": "missionGoal",
-    "message": "In the company's mission statement, what goal will your skills help serve?"
+    "message": "In the company's mission statement, what goal will your skills help serve? ('to <blank> for your company')\n"
   },
   {
     "type": "input",
     "name": "whyJoinParagraph",
-    "message": "Write a paragraph (3-4 sentences) about the company, its mission, and why you would fit into it."
+    "message": "Write an optional paragraph (3-4 sentences) about the company, its mission, and why you would fit into it.\n"
   }
 ]
